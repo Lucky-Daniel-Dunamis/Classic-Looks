@@ -80,7 +80,9 @@
                   <div>
                     <span class="text-lg font-bold text-pink-600">
                       ${{
-                        (product.price * (1 - product.discount / 100)).toFixed(2)
+                        (product.price * (1 - product.discount / 100)).toFixed(
+                          2
+                        )
                       }}
                     </span>
                     <span
@@ -126,6 +128,17 @@
 </template>
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import Hero1 from "../assets/Hero1.jpg";
+import Hero2 from "../assets/Hero2.jpg";
+import Hero3 from "../assets/Hero3.jpg";
+import Hero4 from "../assets/Hero4.jpg";
+import Hero5 from "../assets/Hero5.jpg";
+import Hero6 from "../assets/Hero6.jpg";
+import Hero7 from "../assets/Hero7.jpg";
+import Hero8 from "../assets/Hero8.jpg";
+import Hero10 from "../assets/Hero10.jpg";
+import Hero11 from "../assets/Hero11.jpg";
+import MainImg from "../assets/Main.jpg";
 
 const currentSlide = ref(0);
 const productsPerPage = ref(4);
